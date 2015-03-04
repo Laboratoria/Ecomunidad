@@ -3,10 +3,10 @@ header,
 	// @include position(absolute, 0 0 null 0);
 	// @include position(fixed, 0 0 null 0);
 	// z-index: 1000;
-	@include flex-space-between;
+	// @include flex-space-between;
 	@include normalize-text;
 	width: 100%;
-	padding: 0 $container-fluid;
+	// padding: ($container-fluid / 2) $container-fluid;
 	min-height: $header-height-control;
 	.left,
 	.center,
@@ -22,5 +22,27 @@ header,
 	}
 	.right {
 
+	}
+	.logo {
+		img {
+			width: 91px;
+			height: auto;
+		}
+	}
+}
+
+.main-nav {
+	text-align: right;
+	a {
+		display: inline-block;
+		border-right: 1px solid $gray-light;
+		color: $gray;
+		padding: 0 $container-fluid;
+		&:hover {
+			color: $gray-dark;
+		}
+		&:last-child {
+			border: none;
+		}
 	}
 }

@@ -52,6 +52,9 @@ module.exports = function (grunt) {
       ],
       coffee: [
         '<%= project.src %>/coffee/*.coffee'
+      ],
+      babel: [
+        '<%= project.src %>/babel/*.js'
       ]
     },
 
@@ -116,6 +119,19 @@ module.exports = function (grunt) {
       }
     },
 
+    babel: {
+      dev: {
+        options: {
+          sourceMap: true
+        },
+        dist: {
+          files: {
+            '<%= project.src %>/js/lib/ecmaScript6.js': '<%= project.babel %>'
+          }
+        }
+      } 
+    },
+
     /**
      * JSHint
      * https://github.com/gruntjs/grunt-contrib-jshint
@@ -163,13 +179,13 @@ module.exports = function (grunt) {
         files: {
           // '<%= project.assets %>/js/scripts.min.js': '<%= project.js %>', 
           '<%= project.assets %>/js/scripts.min.js': [
-            // '<%= project.src %>/js/lib/TweenMax.min.js',
-            // '<%= project.src %>/js/lib/ScrollToPlugin.js',
+            '<%= project.src %>/js/lib/TweenMax.js',
+            '<%= project.src %>/js/lib/ScrollToPlugin.js',
             // '<%= project.src %>/js/lib/ScrollMagic.js',
             // '<%= project.src %>/js/lib/jquery.scrollmagic.debug.js',
-            // '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
-            // '<%= project.src %>/js/lib/isotope.pkgd.min.js',
-            // '<%= project.src %>/js/lib/lickity.pkgd.min.js',
+            '<%= project.src %>/js/lib/imagesloaded.pkgd.js',
+            '<%= project.src %>/js/lib/isotope.pkgd.js',
+            '<%= project.src %>/js/lib/flickity.pkgd.js',
             // '<%= project.src %>/js/lib/transformicons.js',
             '<%= project.src %>/js/lib/coffeeCompile.js'
           ]
@@ -395,6 +411,10 @@ module.exports = function (grunt) {
         files: '<%= project.src %>/coffee/*.coffee',
         tasks: 'coffee:dev'
       },
+      babel: {
+        files: '<%= project.src %>/babel/*.js',
+        tasks: 'babel:dev'
+      },
       responsive_images: {
         files: '<%= project.src %>/img/**.{jpg,gif,png}',
         tasks: 'responsive_images:dev'
@@ -423,14 +443,15 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    'sass:ebm',
-    'sass:dev',
-    'bower:dev',
+    'babel:dev',
+    // 'sass:ebm',
+    // 'sass:dev',
+    // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
-    'responsive_images:dev',
+    // 'responsive_images:dev',
     'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',

@@ -1,4 +1,9 @@
 (function() {
+
+
+}).call(this);
+
+(function() {
   'use-strict';
   $(document).ready(function() {
     $('.disable-anchors a').click(function(e) {

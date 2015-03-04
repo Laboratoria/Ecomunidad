@@ -29,8 +29,10 @@ $user-card-width: 70px;
 .site-wrapper,
 .site-content {
 	min-height: 100%;
-	// height: 100%;
 	position: relative;
+}
+.site-content {
+	height: 100%;
 }
 
 // HERO UNIT
@@ -38,13 +40,21 @@ $user-card-width: 70px;
 	position: relative;
 	height: $video-bg-height;
 	@include bg-img-control;
+	overflow: hidden;
 	&.video-bg {
 		overflow: hidden;
 		height: $video-bg-height;
 	}
-	.overlay {
+	.overlay,
+	.hero-unit-pic {
 		@include position(absolute, 0 0 0 0);
 		height: $video-bg-height;
+	}
+	.hero-unit-pic {
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
@@ -52,3 +62,143 @@ $user-card-width: 70px;
 [data-href]{
 	cursor: pointer;
 }
+
+.section-title {
+	@include normalize-text;
+	padding: $grid-gutter-width 0;
+	@include serif-light;
+}
+
+/* 
+
+	EBM: Module
+	Share grid
+
+*/
+$share-grid-height-control: 198px;
+#share-grid {
+	a {
+		padding: 0;
+		position: relative;
+		display: block;
+		height: $share-grid-height-control;
+		overflow: hidden;
+		border: 2px solid white;
+		@media #{$sm-up} {
+			&:hover,
+			&.active {
+				.overlay {
+					@include transform(translateX(0%));
+					@include transition(all 0.2s ease-in-out);
+				}
+			}
+		}
+		@media #{$sm-down} {
+			.overlay {
+				@include transform(translateX(0%));
+			}
+		}
+	}
+	.network-name,
+	.share-icon {
+		padding: $container-fluid;
+		color: white;
+		font-size: $font-size-h3;
+		z-index: 30;
+	}
+	.overlay {
+		@include position(absolute, 0 0 0 0);
+		@media #{$sm-up} {
+			@include transform(translateX(-101%));
+		}
+		@include transition(all 0.2s ease-in-out);
+	}
+	.network-name {
+		@include position(absolute, 0 0 null 0);
+	}
+	.share-icon {
+		@include position(absolute, null 0 0 0);
+		text-align: right;
+	}
+}
+
+/* 
+
+	EBM: Module
+	Laboratoria seal
+
+*/
+
+// $laboratoria-banner-height-control: 70px;
+// $laboratoria-primary: $brand-warning;
+// #laboratoria-banner {
+// 	@include normalize-text;
+// 	position: relative;
+// 	overflow: hidden;
+// 	height: $laboratoria-banner-height-control;
+// 	width: $laboratoria-banner-height-control * 4;
+// 	.laboratoria-icon,
+// 	.laboratoria-label {
+// 		height: $laboratoria-banner-height-control;
+// 		@include position(absolute, 0 0 0 0);
+// 	}
+// 	.laboratoria-icon {
+// 		background-color: $laboratoria-primary;
+// 		width: $laboratoria-banner-height-control;
+// 		z-index: 30;
+// 		@include bg-img-control-center;
+// 		background-size: 81%;
+// 	}
+// 	.laboratoria-label {
+// 		@include flex-middle-center;
+// 		@include transition(all 0.2s ease-in-out);
+// 		padding: $container-fluid;
+// 		width: $laboratoria-banner-height-control * 3;
+// 		background-color: white;
+// 		z-index: 10;
+// 		@media #{$sm-up} {
+// 			@include transform(translateX(-101%));
+// 		}
+// 		a {
+// 			color: $laboratoria-primary;
+// 			&:hover,
+// 			&.active {
+// 				color: darken($laboratoria-primary, 7%);
+// 			}
+// 		}
+// 	}
+// 	&:hover,
+// 	&.active {
+// 		.laboratoria-label {
+// 			@include transition(all 0.2s ease-in-out);
+// 			@include transform(translateX($laboratoria-banner-height-control));
+// 		}
+// 	}
+// 	@media #{$sm-down} {
+// 		.laboratoria-label {
+// 			@include transform(translateX($laboratoria-banner-height-control));
+// 		}
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

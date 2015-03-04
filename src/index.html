@@ -1,31 +1,301 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <!-- Project SEO -->
-    <meta name="description" content="">
-    <meta name="keywords" content="" /> 
-    <meta name="author" content="@MadeByGus" />
-    <!-- Responsiveness -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/icons/favicon.ico">
-    <!-- WebFonts -->
-    <!-- APP STYLES 
-      *Run grunt build when ready
-      <link rel="stylesheet" href="assets/css/style.pkgd.min.css">
-    -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/ebm.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="site-wrapper">
-      <div class="site-menu"></div>
-      <div class="site-content"></div>
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="keywords" content="" /> 
+  <meta name="author" content="@MadeByGus" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <link rel="shortcut icon" href="assets/icons/favicon.ico">
+  <script src="//use.typekit.net/win4gvu.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/ebm.css" rel="stylesheet">
+
+  <div class="site-wrapper"> <!-- Body -->
+    <header class="header flex-middle-center pv-7">
+      <div class="container-fluid flex-space-between">
+        <div class="left col-sm-4">
+          <a href="#inicio" class="logo"><img src="assets/img/Mision.png" alt="Logo Ecomunidad" class="ignore-srcset"></a>
+        </div>
+        <div class="right col-sm-8">
+          <nav class="main-nav">
+            <a href="#mision">Misión</a>
+            <a href="#metodologia">Metodología</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#blog">Blog</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="hero-unit"> <!-- HERO-UNIT -->
+      <div class="hero-unit-pic">
+        <img src="assets/img/img.png" alt="Hero unit pic">
+      </div>
+      <div class="overlay flex-middle">
+        <div class="container-sm">
+          <h1>Ecomunidad</h1>
+        </div>
+      </div>
+    </div> <!-- END:Hero-unit -->
+    <div class="site-content pv-ch-70">
+      <section class="bg-gray-lighter text-center">
+        <div class="container">
+          <p class="lead text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus excepturi consequuntur quidem eligendi, ratione asperiores ab suscipit odio cupiditate, earum veritatis numquam. Iure officia id, quam optio commodi molestias obcaecati.</p>
+        </div>
+      </section>
+      <section id="mision">
+        <div class="container-fluid">
+          <div class="row text-center">
+            <div class="col-sm-6 php-7-sm minh-420 flex-middle-center">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Mision.png" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light">Misión</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae provident neque eius facilis quos, maxime expedita enim voluptate nemo perspiciatis laboriosam dolorum ipsa mollitia inventore, maiores excepturi sapiente blanditiis voluptatibus.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 php-7-sm minh-420 flex-middle-center">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Mision.png" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light">Visión</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae provident neque eius facilis quos, maxime expedita enim voluptate nemo perspiciatis laboriosam dolorum ipsa mollitia inventore, maiores excepturi sapiente blanditiis voluptatibus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="metodologia">
+        <div class="clearfix">
+          <div class="col-sm-6 minh-630 bg-img-block-center" style="background-image: url(assets/img/img-720.png)"></div>
+          <div class="col-sm-6 minh-630 flex-middle-center text-white text-center ph-70-sm" style="background-image: url(assets/img/pool_table.png)">
+            <div>
+              <div><img src="assets/img/Mision.png" alt="Metodología"></div>
+              <h3 class="lead serif-light section-title">Metodología</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis voluptas ab obcaecati illo rerum ad tenetur laborum officiis minus, earum dolores delectus, maiores nisi, reiciendis voluptatum omnis. Ut, aspernatur enim!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="servicios">
+        <div class="container-sm text-center">
+          <h2 class="serif-light section-title">Servicios</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid debitis quibusdam dicta totam sit modi, temporibus fugit vitae animi, aliquam, error fuga vero minus. Tempora eveniet animi iusto, quasi similique!</p>
+        </div>
+        <div class="container-fluid ph-70-sm text-center mt-70-sm mt-35-xs">
+          <ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs">
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+            <li class="grid-list-item">
+              <div>
+                <div><img src="assets/img/Mision.png" alt="Servicios" style="width: 140px; height: auto;"></div>
+                <h3 class="serif-light text-success">Educación</h3>
+                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="proyectos" class="bg-success">
+        <div class="container-fluid ph-70-sm text-white">
+          <h2 class="serif-light section-title">Proyectos</h2>
+          <div class="mb-ch-21">
+            <div class="banner">
+              <div class="banner-pic col-sm-6">
+                <img src="assets/img/img.png" alt="Banner pic">
+              </div>
+              <div class="banner-content col-sm-6 text-center">
+                <div class="normalize-text serif-light pv-21">
+                  <h3>Nombre del proyecto 1</h3>
+                  <span>Nombre de distrito</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur modi minus minima ducimus porro, nemo, sit aliquid cum numquam error sed dicta ut, odit, excepturi possimus neque voluptates fugiat deleniti?</p>
+              </div>
+            </div>
+            <div class="banner">
+              <div class="banner-pic col-sm-6">
+                <img src="assets/img/img.png" alt="Banner pic">
+              </div>
+              <div class="banner-content col-sm-6 text-center">
+                <div class="normalize-text serif-light pv-21">
+                  <h3>Nombre del proyecto 1</h3>
+                  <span>Nombre de distrito</span>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur modi minus minima ducimus porro, nemo, sit aliquid cum numquam error sed dicta ut, odit, excepturi possimus neque voluptates fugiat deleniti?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="equipo">
+        <div class="container-fluid ph-70-sm">
+          <h2 class="section-title text-success">Equipo</h2>
+        </div>
+        <div class="container text-center">
+          <ul class="grid-list grid-list-2 grid-list-1-xs normalize-text">
+            <li class="grid-list-item">
+              <div><img src="assets/img/user.jpg" alt="User name" style="width: 140px; height: 140px;" class="img-circle"></div>
+              <div class="pv-21">
+                <h3 class="serif-light">Camila Basurco</h3>
+                <span>Cargo Desempeñado</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque provident nam sit.</p>
+              <nav class="pv-21">
+                <a href="#">F</a>
+                <a href="#">IN</a>
+                <a href="#">EM</a>
+              </nav>
+            </li>
+            <li class="grid-list-item">
+              <div><img src="assets/img/user.jpg" alt="User name" style="width: 140px; height: 140px;" class="img-circle"></div>
+              <div class="pv-21">
+                <h3 class="serif-light">Camila Basurco</h3>
+                <span>Cargo Desempeñado</span>
+              </div>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque provident nam sit.</p>
+              <nav class="pv-21">
+                <a href="#">F</a>
+                <a href="#">IN</a>
+                <a href="#">EM</a>
+              </nav>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="blog" class="minh-700" style="background-image: url(assets/img/seamless_paper_texture.png)">
+        <div class="container-fluid ph-70-sm">
+          <h3 class="section-title">Blog</h3>
+          <div class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+            <div class="gallery-cell grid-list-item">
+              <div class="banner half-height">
+                <div class="banner-pic">
+                  <img src="assets/img/img.png" alt="Blog image name">
+                </div>
+                <div class="banner-content text-hover-primary">
+                  <div class="serif-light">
+                    <h3><a href="#">Título del post</a></h3>
+                    <span>01.Ene.2015</span>                      
+                  </div>
+                  <p class="normalize-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque cupiditate blanditiis, reiciendis nihil eligendi, laborum quae provident maiores, facilis officiis magni recusandae odio fugit ipsum praesentium fuga veritatis minus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-cell grid-list-item">
+              <div class="banner half-height">
+                <div class="banner-pic">
+                  <img src="assets/img/img.png" alt="Blog image name">
+                </div>
+                <div class="banner-content text-hover-primary">
+                  <div class="serif-light">
+                    <h3><a href="#">Título del post</a></h3>
+                    <span>01.Ene.2015</span>                      
+                  </div>
+                  <p class="normalize-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque cupiditate blanditiis, reiciendis nihil eligendi, laborum quae provident maiores, facilis officiis magni recusandae odio fugit ipsum praesentium fuga veritatis minus.</p>
+                </div>
+              </div>
+            </div>
+            <div class="gallery-cell grid-list-item">
+              <div class="banner half-height">
+                <div class="banner-pic">
+                  <img src="assets/img/img.png" alt="Blog image name">
+                </div>
+                <div class="banner-content text-hover-primary">
+                  <div class="serif-light">
+                    <h3><a href="#">Título del post</a></h3>
+                    <span>01.Ene.2015</span>                      
+                  </div>
+                  <p class="normalize-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed eaque cupiditate blanditiis, reiciendis nihil eligendi, laborum quae provident maiores, facilis officiis magni recusandae odio fugit ipsum praesentium fuga veritatis minus.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="comparte" class="bg-gray-darker">
+        <div class="container">
+          <h3 class="section-title text-white">Comparte</h3>
+        </div>
+        <div class="container minh-350 flex-middle">
+          <div id="share-grid" class="grid-list grid-list-4 grid-list-2-sm grid-list-1-xs">
+            <a href="#" class="grid-list-item">
+              <h3 class="network-name">Facebook</h3>
+              <div class="share-icon"><i class="icon-facebook"></i></div>
+              <div class="overlay bg-facebook"></div>
+            </a>
+            <a href="#" class="grid-list-item">
+              <h3 class="network-name">Twitter</h3>
+              <div class="share-icon"><i class="icon-twitter"></i></div>
+              <div class="overlay bg-twitter"></div>
+            </a>
+            <a href="#" class="grid-list-item">
+              <h3 class="network-name">Linkedin</h3>
+              <div class="share-icon"><i class="icon-linkedin"></i></div>
+              <div class="overlay bg-linkedin"></div>
+            </a>
+            <a href="#" class="grid-list-item">
+              <h3 class="network-name">Email</h3>
+              <div class="share-icon"><i class="icon-email-at"></i></div>
+              <div class="overlay bg-primary"></div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <footer class="bg-white">
+        <div class="minh-280 flex-middle-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6 minh-140 flex-middle">
+                <div id="laboratoria-banner"></div>
+              </div>
+              <div class="col-sm-6 minh-140 flex-middle text-right normalize-text">
+                <p>Ecomunidad sostenible<br><a href="mailto:hola@ecomunidad" class="text-gray underline">hola@ecomunidad.com.pe</a><br><span class="text-gray-light">51 998 887 776</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-gray-darker text-center">
+          <div class="container text-gray pv-7">
+            Icons made by <a href="http://www.flaticon.com/authors/alessio-atzeni" title="Alessio Atzeni">Alessio Atzeni</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a>             is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0">CC BY 3.0</a>
+          </div>
+        </div>
+      </footer>
     </div>
-    <!-- APP SCRIPTS -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/scripts.min.js"></script>
-  </body>
+  </div>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/scripts.min.js"></script> 
+  <script type="text/javascript" src="https://cdn.rawgit.com/Laboratoria/Laboratoria.02/master/LaboratoriaBanner/laboratoriaBanner.js"></script>
 </html>
