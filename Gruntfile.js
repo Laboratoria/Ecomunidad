@@ -443,9 +443,9 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    'babel:dev',
+    // 'babel:dev',
     // 'sass:ebm',
-    // 'sass:dev',
+    'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
@@ -455,7 +455,7 @@ module.exports = function (grunt) {
     'responsive_images_extender:dev',
     'connect:livereload',
     'uglify',
-    'open',
+    // 'open',
     'watch'
   ]);
 

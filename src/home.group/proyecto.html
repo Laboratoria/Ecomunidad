@@ -1,0 +1,16 @@
+{exp:channel:entries channel="proyecto" dynamic="off"}
+  <div class="banner">
+    <div class="banner-pic col-sm-6">
+      {imagen_proyecto}
+      <img src="{image:url}" alt="Banner pic" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+      {/imagen_proyecto}
+    </div>
+    <div class="banner-content col-sm-6 text-center">
+      <div class="normalize-text serif-light pv-21">
+        <h3>{title}</h3>
+        <span>{distrito}</span>
+      </div>
+      <p>{descripcion}</p>
+    </div>
+  </div>
+{/exp:channel:entries}
