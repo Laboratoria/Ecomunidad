@@ -1,0 +1,28 @@
+<div class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs main-gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false }'>
+  {exp:channel:entries channel="blog_posts" limit="3" dynamic="off"}
+    <div class="gallery-cell grid-list-item">
+      <div class="banner half-height">
+        <div class="banner-pic">
+          {if imagen_blog_post}
+            {imagen_blog_post}
+            <img src="{image:url}" alt="{image:title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+            {/imagen_blog_post}
+          {if:else}
+            <img src="{site_url}app/assets/img/img.png" alt="Blog image name">
+          {/if}
+        </div>
+        <div class="banner-content text-hover-primary">
+          <div class="serif-light">
+            <h3><a href="#">{title}</a></h3>
+            <span>{entry_date format="%Y %m %d"}</span>                      
+          </div>
+          <p class="normalize-text">
+            {exp:char_limit total="140" exact="no"}
+              {contenido}
+            {/exp:char_limit}
+          </p>
+        </div>
+      </div>
+    </div>
+  {exp:channel:entries}
+</div>

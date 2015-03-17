@@ -1,0 +1,25 @@
+<ul class="grid-list grid-list-2 grid-list-1-xs normalize-text">
+  {exp:channel:entries channel="equipo" limit="3" dynamic="off"}
+    <li class="grid-list-item">
+      {imagen_miembro_del_equipo limit="1"}
+      <div><img src="{image:url}" alt="User name" style="width: 140px; height: 140px;" class="img-circle" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:medium} 940w, {image:url} 1140w"></div>
+      {/imagen_miembro_del_equipo}
+      <div class="pv-21">
+        <h3 class="serif-light">{title}</h3>
+        <span>{cargo}</span>
+      </div>
+      <p>{descripcion_del_miembro_del_equipo}</p>
+      <nav class="pv-21">
+        {if link_facebook}
+        <a href="{link_facebook}" target="_blank" rel="nofollow">F</a>
+        {/if}
+        {if link_linkedin}
+        <a href="{link_linkedin}" target="_blank" rel="nofollow">IN</a>
+        {/if}
+        {if email_del_miembro_del_equipo}
+        <a href="mailto:{email_del_miembro_del_equipo}" rel="nofollow">E</a>
+        {/if}
+      </nav>
+    </li>
+  {/exp:channel:entries}
+</ul>
