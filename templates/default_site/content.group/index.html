@@ -3,7 +3,7 @@
     <div class="hero-unit"> <!-- HERO-UNIT -->
       <div class="hero-unit-pic">
         {imagen_principal}
-        <img src="{image:url}" alt="{title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+        <img src="{image:url}" alt="{title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url} 940w, {image:url} 1140w">
         {/imagen_principal}
       </div>
       <div class="overlay flex-middle">
@@ -12,34 +12,34 @@
         </div>
       </div>
     </div> <!-- END:Hero-unit -->
-    <div class="site-content pv-ch-70">
-      <section class="bg-gray-lighter text-center">
+    <div class="site-content">
+      <section class="bg-gray-lighter text-center pv-35">
         <div class="container">
-          <p class="lead text-gray">{texto_introductorio}</p>
+          <h4 class="lead text-gray mt-7">{texto_introductorio}</h4>
         </div>
       </section>
       {embed="home/mision"}
       {embed="home/metodologia"}
       {embed="home/servicios"}
-      <section id="proyectos" class="bg-success">
-        <div class="container ph-70-sm text-white">
-          <h2 class="serif-light section-title">Proyectos</h2>
+      <section id="proyectos" class="bg-success pv-35">
+        <div class="container pb-35 text-white">
+          <h2 class="serif-light section-title text-center">Proyectos</h2>
           <div class="mb-ch-21">
             {embed="home/proyecto"}
           </div>
         </div>
       </section>
-      <section id="equipo">
-        <div class="container ph-70-sm">
-          <h2 class="section-title text-success">Equipo</h2>
+      <section id="equipo" class="pv-35 bg-gray-lighter">
+        <div class="container">
+          <h2 class="section-title text-success text-center">Equipo</h2>
         </div>
-        <div class="container text-center">
+        <div class="container text-center pb-35">
           {embed="home/equipo"}
         </div>
       </section>
-      <section id="blog" class="minh-700" style="background-image: url(assets/img/seamless_paper_texture.png)">
-        <div class="container ph-70-sm">
-          <h3 class="section-title">Blog</h3>
+      <section id="blog" class="pb-49" style="background-image: url({site_url}assets/img/seamless_paper_texture.png)">
+        <div class="container">
+          <h2 class="section-title text-center">Blog</h2>
           {embed="home/blog"}
         </div>
       </section>
