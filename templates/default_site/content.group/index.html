@@ -12,14 +12,15 @@
         </div>
       </div>
     </div>-->
-    <div class="bg-gallery-wrapper">
+    <div class="bg-gallery-wrapper hero-unit">
       <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
+        {imagen_principal}
         <div class="gallery-cell" 
             data-responsive-bg-img='{ 
-              "vw-phone": "{site_url}app/assets/img/projects_innova-champs.jpg",
-              "vw-tablet": "{site_url}app/assets/img/projects_innova-champs.jpg",
-              "vw-desktop": "{site_url}app/assets/img/projects_innova-champs.jpg",
-              "vw-lg-desktop": "{site_url}app/assets/img/projects_innova-champs.jpg"
+              "vw-phone": "{image:url:small}",
+              "vw-tablet": "{image:url}",
+              "vw-desktop": "{image:url}",
+              "vw-lg-desktop": "{image:url}"
             }'>
           <div class="gallery-cell-wrapper">
             <div class="gallery-cell-content flex-middle-center">
@@ -35,27 +36,7 @@
             </div>
           </div>
         </div>
-        <div class="gallery-cell" 
-            data-responsive-bg-img='{ 
-              "vw-phone": "{site_url}app/assets/img/projects_interbank.jpg",
-              "vw-tablet": "{site_url}app/assets/img/projects_interbank.jpg",
-              "vw-desktop": "{site_url}app/assets/img/projects_interbank.jpg",
-              "vw-lg-desktop": "{site_url}app/assets/img/projects_interbank.jpg"
-            }'>
-          <div class="gallery-cell-wrapper">
-            <div class="gallery-cell-content flex-middle-center">
-              <div class="container-sm text-white lead-ch text-shadow text-center">
-                <h3>Understanding The New Peruvian Middle-Class</h3>
-                <div class="separator separator-white separator-centered"></div>
-                <p class="custom-quotes">How might we understand the desires and aspirations of middle-class families to develop better products and services?</p>
-                <a href="#" class="btn btn-icon-outline btn-white unlead">
-                  <span>Learn more</span>
-                  <i class="icon-chevron-right"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {/imagen_principal}
       </div>
     </div>    
     <div class="site-content">
