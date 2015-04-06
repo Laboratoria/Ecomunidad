@@ -4778,6 +4778,18 @@ a.not-underline:hover {
   line-height: 2rem;
 }
 
+/*
+  Text shadow
+*/
+.text-shadow {
+  text-shadow: rgba(62, 63, 64, 0.33) 0 2px 1px;
+}
+.text-shadow p, .text-shadow .p, .text-shadow span, .text-shadow em, .text-shadow strong, .text-shadow label, .text-shadow a, .text-shadow i, .text-shadow ul, .text-shadow ol, .text-shadow li,
+.text-shadow h1, .text-shadow h2, .text-shadow h3, .text-shadow h4, .text-shadow h5, .text-shadow h6,
+.text-shadow .h1, .text-shadow .h2, .text-shadow .h3, .text-shadow .h4, .text-shadow .h5, .text-shadow .h6 {
+  text-shadow: rgba(62, 63, 64, 0.33) 0 2px 1px;
+}
+
 html,
 body {
   min-height: 100%;
