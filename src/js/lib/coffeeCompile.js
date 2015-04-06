@@ -38,6 +38,7 @@
     $.each(RBGIMG, function(index, item) {
       var imgSizeObj;
       imgSizeObj = $(item).data('responsive-bg-img');
+      console.log(imgSizeObj);
       switch (true) {
         case windowWidth <= screenSizes['screenPhone']:
           addBgImg(item, imgSizeObj['vw-phone']);
