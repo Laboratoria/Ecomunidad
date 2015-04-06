@@ -28,7 +28,6 @@
       screenDesktop: 960,
       screenLargeDesktop: 1140
     };
-    console.log(windowWidth);
     addBgImg = function(item, img) {
       $(item).addClass('bg-img-block').css({
         'background-image': 'url(' + img + ')'
@@ -37,7 +36,6 @@
     $.each(RBGIMG, function(index, item) {
       var imgSizeObj;
       imgSizeObj = $(item).data('responsive-bg-img');
-      console.log(imgSizeObj);
       switch (true) {
         case windowWidth <= screenSizes['screenPhone']:
           addBgImg(item, imgSizeObj['vw-phone']);
