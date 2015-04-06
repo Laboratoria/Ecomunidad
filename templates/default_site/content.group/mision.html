@@ -1,0 +1,30 @@
+{exp:channel:entries channel="mision" limit="1" dynamic="off"}
+  <section id="mision">
+    <div class="container-fluid">
+      <div class="row text-center">
+        <div class="col-sm-6 php-7-sm minh-420 flex-middle-center">
+          <div>
+            <div>
+              {imagen_mision}
+              <img src="{image:url}" alt="Mision" style="width: 140px; height: auto;" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+              {/imagen_mision}
+            </div>
+            <h3 class="serif-light">Misión</h3>
+            <p>{texto_mision}</p>
+          </div>
+        </div>
+        <div class="col-sm-6 php-7-sm minh-420 flex-middle-center">
+          <div>
+            <div>
+              {imagen_vision}
+              <img src="{image:url}" alt="Mision.png" style="width: 140px; height: auto;" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+              {/imagen_vision}
+            </div>
+            <h3 class="serif-light">Visión</h3>
+            <p>{texto_vision}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{exp:channel:entries}

@@ -22,8 +22,10 @@ $config['allow_extensions'] = 'y';
 $config['cookie_prefix'] = '';
 $config['cookie_httponly'] = 'y';
 
+$config['index_page'] = 'index.php';
 
 // END EE config items
+
 
 /*
 |--------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+<ul class="grid-list grid-list-3 grid-list-2-sm grid-list-1-xs">
+  {exp:channel:entries channel="servicios_categoria" dynamic="off"}
+  <li class="grid-list-item">
+    <div>
+      <div>
+        {imagen_categoria}
+        <img src="{image:url}" alt="Servicios" style="width: 140px; height: auto;" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+        {/imagen_categoria}
+      </div>
+      <h3 class="serif-light text-success">{title}</h3>
+      <p class="text-gray">{descripcion}</p>
+    </div>
+  </li>
+  {/exp:channel:entries}
+</ul>

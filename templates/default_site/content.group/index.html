@@ -1,45 +1,56 @@
 {embed="includes/head"}
   {exp:channel:entries channel="home" limit="1"}
-    <div class="hero-unit size lg"> <!-- HERO-UNIT -->
-      <div class="hero-unit-pic">
-        {imagen_principal}
-        <img src="{image:url}" alt="{title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
-        {/imagen_principal}
-      </div>
-      <div class="overlay flex-middle">
-        <div class="container-sm">
-          {bloque_principal}
+    <div class="hero-unit bg-gallery-wrapper"> 
+      <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
+        <div class="gallery-cell" 
+            {imagen_principal}
+            data-responsive-bg-img='{ 
+              "vw-phone": "{image:url:small},
+              "vw-tablet": "{image:url:medium},
+              "vw-desktop": "{image:url:large},
+              "vw-lg-desktop": "{image:url}"
+            }'{/imagen_principal}>
+          <div class="gallery-cell-wrapper">
+            <div class="gallery-cell-content flex-middle-center">
+              <div class="container-sm text-white lead-ch text-shadow text-center">
+                <h3>{home_titulo}</h3>
+                <div class="separator separator-white separator-centered"></div>
+                <p class="custom-quotes">{home_quote}</p>                
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div> <!-- END:Hero-unit -->
     <div class="site-content">
-      <section class="bg-gray-lighter text-center">
-        <div class="container">
-          <p class="lead text-gray">{texto_introductorio}</p>
+      <section class="bg-gray-lighter text-center pv-35">
+        <div class="container-sm">
+	        <h2 class="text-center text-success">{bloque_principal}</h2>
+          <h4 class="text-gray mt-7 mb-14 light">{texto_introductorio}</h4>
         </div>
       </section>
       {embed="home/mision"}
-      {embed="home/metodologia"}
+      {embed="home/metodologia"}    
       {embed="home/servicios"}
-      <section id="proyectos" class="bg-success">
-        <div class="container ph-70-sm text-white">
-          <h2 class="serif-light section-title">Proyectos</h2>
+      <section id="proyectos" class="bg-success pv-35">
+        <div class="container pb-35 text-white">
+          <h2 class="serif-light section-title text-center lead">Proyectos</h2>
           <div class="mb-ch-21">
             {embed="home/proyecto"}
           </div>
         </div>
       </section>
-      <section id="equipo">
-        <div class="container ph-70-sm">
-          <h2 class="section-title text-success">Equipo</h2>
+      <section id="equipo" class="pv-35 bg-gray-lighter">
+        <div class="container">
+          <h2 class="section-title text-success text-center lead">Equipo</h2>
         </div>
-        <div class="container text-center">
+        <div class="container text-center pb-35">
           {embed="home/equipo"}
         </div>
       </section>
-      <section id="blog" class="minh-700" style="background-image: url(assets/img/seamless_paper_texture.png)">
-        <div class="container ph-70-sm">
-          <h3 class="section-title">Blog</h3>
+      <section id="blog" class="pb-49" style="background-image: url({site_url}assets/img/seamless_paper_texture.png)">
+        <div class="container">
+          <h2 class="section-title text-center lead">Blog</h2>
           {embed="home/blog"}
         </div>
       </section>
