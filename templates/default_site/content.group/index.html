@@ -1,21 +1,23 @@
 {embed="includes/head"}
   {exp:channel:entries channel="home" limit="1"}
-    <div class="hero-unit bg-gallery-wrapper"> 
-      <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
-        <div class="gallery-cell" 
-            {imagen_principal}
-            data-responsive-bg-img='{ 
-              "vw-phone": "{image:url:small},
-              "vw-tablet": "{image:url:medium},
-              "vw-desktop": "{image:url:large},
-              "vw-lg-desktop": "{image:url}"
-            }'{/imagen_principal}>
-          <div class="gallery-cell-wrapper">
-            <div class="gallery-cell-content flex-middle-center">
-              <div class="container-sm text-white lead-ch text-shadow text-center">
-                <h3>{home_titulo}</h3>
-                <div class="separator separator-white separator-centered"></div>
-                <p class="custom-quotes">{home_quote}</p>                
+    <div class="hero-unit"> 
+      <div class="bg-gallery-wrapper">
+        <div class="gallery js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "pageDots": false, "prevNextButtons": false, "autoPlay": 7000, "wrapAround": true }'>
+          <div class="gallery-cell" 
+              {imagen_principal}
+              data-responsive-bg-img='{ 
+                "vw-phone": "{image:url:small},
+                "vw-tablet": "{image:url:medium},
+                "vw-desktop": "{image:url:large},
+                "vw-lg-desktop": "{image:url}"
+              }'{/imagen_principal}>
+            <div class="gallery-cell-wrapper">
+              <div class="gallery-cell-content flex-middle-center">
+                <div class="container-sm text-white lead-ch text-shadow text-center">
+                  <h3>{home_titulo}</h3>
+                  <div class="separator separator-white separator-centered"></div>
+                  <p class="custom-quotes">{home_quote}</p>                
+                </div>
               </div>
             </div>
           </div>
