@@ -26,18 +26,18 @@ $(document).ready ->
 		screenDesktop: 960
 		screenLargeDesktop: 1140
 	}
-	console.log windowWidth
+	# console.log windowWidth
 	addBgImg = (item, img) ->
-		console.log $(item)
-		console.log img
+		# console.log $(item)
+		# console.log img
 		$(item).addClass('bg-img-block').css({
 			'background-image': 'url(' + img + ')'
 			})
 		return
 	$.each(RBGIMG, (index, item)->
 		imgSizeObj = $(item).data('responsive-bg-img')
-		console.log imgSizeObj
-		console.log imgSizeObj['vw-lg-desktop']
+		# console.log imgSizeObj
+		# console.log imgSizeObj['vw-lg-desktop']
 		switch true
 			when windowWidth <= screenSizes['screenPhone'] then addBgImg(item, imgSizeObj['vw-phone'])
 			when windowWidth <= screenSizes['screenTablet'] && windowWidth > screenSizes['screenPhone'] then addBgImg(item, imgSizeObj['vw-tablet'])
