@@ -28,6 +28,8 @@ $(document).ready ->
 	}
 	# console.log windowWidth
 	addBgImg = (item, img) ->
+		console.log item
+		console.log img
 		$(item).addClass('bg-img-block').css({
 			'background-image': 'url(' + img + ')'
 			})

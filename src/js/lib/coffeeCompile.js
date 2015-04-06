@@ -29,6 +29,8 @@
       screenLargeDesktop: 1140
     };
     addBgImg = function(item, img) {
+      console.log(item);
+      console.log(img);
       $(item).addClass('bg-img-block').css({
         'background-image': 'url(' + img + ')'
       });
