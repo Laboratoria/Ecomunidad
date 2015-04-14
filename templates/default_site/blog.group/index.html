@@ -1,0 +1,30 @@
+{embed="includes/head"}
+  
+    <div class="site-content">
+      <section class="pv-70">
+	      {exp:channel:entries channel="blog_posts" limit="5" paginate="bottom"}
+        <div class="container-sm pb-49">
+	        <h1>{title}</h1>
+	        <span>{entry_date format="%d-%m-%Y"}</span>
+	        <div class="pt-14 pb-28">
+		        {if imagen_blog_post}
+	            {imagen_blog_post}
+	            <img src="{image:url}" alt="{image:title}" srcset="{image:url:medium} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w" width="100%">
+	            {/imagen_blog_post}
+	          {/if}
+	        </div>
+	        {exp:char_limit total="150" exact="no"}
+          <p class="lead text-gray mt-7">{contenido}</p>
+          {/exp:char_limit}
+          <p><a href="{site_url}blog/post/{url_title}">Lee más →</a></p>
+          <hr>
+        </div>
+		    {paginate}
+		        <p class="text-center pv-35">Página {current_page} de {total_pages} páginas {pagination_links}</p>
+		    {/paginate}        
+        {/exp:channel:entries}
+      </section>
+      
+      {embed="home/comparte"}     
+      {embed="includes/footer"}   
+  

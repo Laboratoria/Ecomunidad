@@ -2,13 +2,13 @@
   {exp:channel:entries channel="blog_posts" limit="1"}
     <div class="site-content">
       <section class="pv-70">
-        <div class="container">
+        <div class="container-sm">
 	        <h1>{title}</h1>
 	        <span>{entry_date format="%d-%m-%Y"}</span>
 	        <div class="pt-14 pb-28">
 		        {if imagen_blog_post}
 	            {imagen_blog_post}
-	            <img src="{image:url}" alt="{image:title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w">
+	            <img src="{image:url}" alt="{image:title}" srcset="{image:url:small} 480w, {image:url:medium} 720w, {image:url:large} 940w, {image:url} 1140w" width="100%">
 	            {/imagen_blog_post}
 	          {/if}
 	        </div>
