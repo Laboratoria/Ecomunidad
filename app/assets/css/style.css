@@ -5826,6 +5826,7 @@ header .logo img,
     display: block;
     color: #7D7E7F;
     margin: 7px 0;
+    border: none;
   }
 }
 
