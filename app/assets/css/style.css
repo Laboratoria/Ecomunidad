@@ -517,7 +517,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 h6, .h6 {
@@ -3861,7 +3861,7 @@ html {
   }
   html h1, html h2, html h3, html h4, html h5, html h6,
   html .h1, html .h2, html .h3, html .h4, html .h5, html .h6 {
-    line-height: 0.9;
+    line-height: 1.1;
   }
   html h1, html .h1,
   html h2, html .h2,
