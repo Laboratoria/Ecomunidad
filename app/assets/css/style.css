@@ -6242,14 +6242,14 @@ tbody.collapse.in {
 
     /*responsive header*/
     @media only screen and (max-width: 480px) {
-      header .contaner {
+      header .container {
         position: relative;
         padding: 0;
       }
     }
 
     @media only screen and (max-width: 480px) {
-      header .contaner .navbar-collapse.in {
+      header .container .navbar-collapse.in {
         width: 100%;
         position: relative;
         padding: 0px;
@@ -6271,6 +6271,12 @@ tbody.collapse.in {
     @media only screen and (max-width: 480px) {
       #mision, #servicios, #equipos {
          background: #f5f5f5;
+      }
+    }
+
+    @media only screen and (max-width: 480px) {
+       header .container .col-sm-4 {
+        position: absolute;
       }
     }
 
