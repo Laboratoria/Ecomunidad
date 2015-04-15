@@ -6188,7 +6188,6 @@ tbody.collapse.in {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent; }
   .navbar:before, .navbar:after {
     content: " ";
@@ -6264,7 +6263,7 @@ tbody.collapse.in {
 
     @media only screen and (max-width: 480px) {
       .main-nav a {
-         padding: 29px 0;
+         padding: 25px 0;
       }
     }
 
