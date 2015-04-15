@@ -6269,19 +6269,19 @@ tbody.collapse.in {
     }
 
     @media only screen and (max-width: 480px) {
-      .main-nav a#mision {
+      .main-nav a.mision-header {
          background: #f5f5f5;
       }
     }
 
     @media only screen and (max-width: 480px) {
-      .main-nav a#servicios {
+      .main-nav a.servicios-header {
          background: #f5f5f5;
       }
     }
 
     @media only screen and (max-width: 480px) {
-      .main-nav a#equipos {
+      .main-nav a.equipo-header {
          background: #f5f5f5;
       }
     }
