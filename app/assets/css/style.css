@@ -6247,13 +6247,7 @@ tbody.collapse.in {
       }
     }
 
-    @media only screen and (max-width: 480px) {
-      header .container .navbar-collapse {
-        width: 100%;
-        position: relative;
-        padding: 0px;
-      }
-    }
+  
 
     @media only screen and (max-width: 480px) {
       nav.main-nav {
